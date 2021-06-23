@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdministradorController;
+use App\Http\Controllers\DirectorioController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +16,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//RUTAS DE LANDING PAGE
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+//RUTAS ADMINISTRADOR
+Route::get('/DEPARTAMENTOS/Administrador_LauNET/perfil', [AdministradorController::class, 'perfil'])->name('Administrador_LauNET.perfil');
+
+
+//RUTAS DOCUMENTOS LAUMAYER
+
+//1. DIRECTORIO
+Route::get('/Laumayer/Documentos/directorio', [DirectorioController::class, 'index'])->name('Directorio.index');

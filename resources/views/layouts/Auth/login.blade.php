@@ -89,11 +89,12 @@
                             </ul>
                         </nav>
                         <p class="copyright pull-right">
+                            Copyright
                             &copy;
+                            <a href="https://laumayer.com/">Laumayer</a>
                             <script>
                                 document.write(new Date().getFullYear())
                             </script>
-                            <a href="https://laumayer.com/">Copyright © Laumayer 2021</a>, <b>LauNET</b></p>
                         </p>
                     </div>
                 </footer>

@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png" />
-        <link rel="icon" type="image/png" href="../../assets/img/favicon.png" />
+        <link rel="icon" type="image/png" href="{{asset('/assets/img/favicon.png')}}" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title>LauNET | Administrador</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -67,7 +67,7 @@
     <div class="sidebar-wrapper">
         <div class="user">
             <div class="photo">
-                <img src="../assets/img/faces/FotoPersonal.png" />
+                <img src="/assets/img/faces/FotoPersonal.png" />
                 <img src="{{asset('assets/img/faces/marc.jpg')}}" />
             </div>
             <div class="info">
@@ -78,7 +78,7 @@
              <div class="collapse" id="collapseExample">
                 <ul class="nav">
                     <li>
-                        <a href="">Perfil</a>
+                        <a href="{{ route('Administrador_LauNET.perfil') }}">Perfil</a>
                     </li>
                     <li>
                         <a class="dropdown-item" href="{{ route('logout') }}"
@@ -96,16 +96,40 @@
     </div>
 </div>
 <ul class="nav">
-    <li class="active">
+    <li class="">
         <a href="/home">
             <i class="material-icons">home</i>
             <p>Home</p>
         </a>
     </li>
     <li>
+        <a data-toggle="collapse" href="#Laumayer">
+            <i class="material-icons">security</i>
+            <p>Laumayer
+                <b class="caret"></b>
+            </p>
+        </a>
+        <div class="collapse" id="Laumayer">
+            <ul class="nav">
+                <li>
+                    <a href="{{ route('Directorio.index') }}">Directorio Telefonico</a>
+                </li>
+                <li>
+                    <a href="../pages/timeline.html">Timeline</a>
+                </li>
+                <li>
+                    <a href="../pages/pricing.html">Pricing</a>
+                </li>
+                <li>
+                    <a href="../pages/timeline.html">Timeline</a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li>
         <a data-toggle="collapse" href="#pagesExamples">
             <i class="material-icons">image</i>
-            <p>Pages
+            <p>Laumayer
                 <b class="caret"></b>
             </p>
         </a>
@@ -157,7 +181,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/home"> Network | <b>Administrador</b></a>
+                <a class="navbar-brand" href="/home"> LauNET | <b>Administrador</b></a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -218,9 +242,21 @@
     <div class="content">
         <div class="container-fluid">
 
-            <!-- INICIO CONTENIDO -->
+            <!-- --------------------------[INICIO DE CONTENIDO]-------------------------- -->
+
+            <!-- ADMINISTRADOR -->
             @yield('home')
-            <!-- FIN CONTENIDO -->
+            @yield('perfil')
+
+            <!-- DOCUMENTOS -->
+            @yield('directorio')
+
+            <!-- ACCIONES -->
+            @yield('create')
+            @yield('update')
+            @yield('delete')
+
+            <!-- --------------------------[FIN CONTENIDO]-------------------------- -->
 
         </div>
     </div>
@@ -251,11 +287,12 @@
                 </ul>
             </nav>
             <p class="copyright pull-right">
+                Copyright
                 &copy;
+                <a href="https://laumayer.com/">Laumayer</a>
                 <script>
                     document.write(new Date().getFullYear())
                 </script>
-                <a href="http://www.creative-tim.com/">Creative Tim</a>, made with love for a better web
             </p>
         </div>
     </footer>

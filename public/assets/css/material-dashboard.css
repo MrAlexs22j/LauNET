@@ -6058,14 +6058,14 @@ h2.title {
 .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle, .open >
 .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:focus, .open >
 .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:hover {
-  background-color: #024b94;
+  background-color: #004A93;
   color: #FFFFFF;
 }
 .btn.btn-primary:focus, .btn.btn-primary:active, .btn.btn-primary:hover,
 .navbar .navbar-nav > li > a.btn.btn-primary:focus,
 .navbar .navbar-nav > li > a.btn.btn-primary:active,
 .navbar .navbar-nav > li > a.btn.btn-primary:hover {
-  box-shadow: 0 14px 26px -12px #024b94, 0 4px 23px 0px #337ec7, 0 8px 10px -5px #024b94;
+  box-shadow: 0 14px 26px -12px #337ec7, 0 4px 23px 0px #ffffff, 0 8px 10px -5px #337ec7;
 }
 .btn.btn-primary.disabled, .btn.btn-primary.disabled:hover, .btn.btn-primary.disabled:focus, .btn.btn-primary.disabled.focus, .btn.btn-primary.disabled:active, .btn.btn-primary.disabled.active, .btn.btn-primary:disabled, .btn.btn-primary:disabled:hover, .btn.btn-primary:disabled:focus, .btn.btn-primary:disabled.focus, .btn.btn-primary:disabled:active, .btn.btn-primary:disabled.active, .btn.btn-primary[disabled], .btn.btn-primary[disabled]:hover, .btn.btn-primary[disabled]:focus, .btn.btn-primary[disabled].focus, .btn.btn-primary[disabled]:active, .btn.btn-primary[disabled].active, fieldset[disabled] .btn.btn-primary, fieldset[disabled] .btn.btn-primary:hover, fieldset[disabled] .btn.btn-primary:focus, fieldset[disabled] .btn.btn-primary.focus, fieldset[disabled] .btn.btn-primary:active, fieldset[disabled] .btn.btn-primary.active,
 .navbar .navbar-nav > li > a.btn.btn-primary.disabled,
@@ -6373,7 +6373,7 @@ h2.title {
 }
 .btn.btn-rose,
 .navbar .navbar-nav > li > a.btn.btn-rose {
-  box-shadow: 0 2px 2px 0 #024b94, 0 3px 1px -2px #024b94, 0 1px 5px 0 #024b94;
+  box-shadow: 0 2px 2px 0 #024b94, 0 3px 1px -2px #0080ff, 0 1px 5px 0 #ffffff;
 }
 .btn.btn-rose, .btn.btn-rose:hover, .btn.btn-rose:focus, .btn.btn-rose:active, .btn.btn-rose.active, .btn.btn-rose:active:focus, .btn.btn-rose:active:hover, .btn.btn-rose.active:focus, .btn.btn-rose.active:hover, .open > .btn.btn-rose.dropdown-toggle, .open > .btn.btn-rose.dropdown-toggle:focus, .open > .btn.btn-rose.dropdown-toggle:hover,
 .navbar .navbar-nav > li > a.btn.btn-rose,
@@ -6388,14 +6388,14 @@ h2.title {
 .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle, .open >
 .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:focus, .open >
 .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:hover {
-  background-color: #024b94 ;
+  background-color: #004A93 ;
   color: #FFFFFF;
 }
 .btn.btn-rose:focus, .btn.btn-rose:active, .btn.btn-rose:hover,
 .navbar .navbar-nav > li > a.btn.btn-rose:focus,
 .navbar .navbar-nav > li > a.btn.btn-rose:active,
 .navbar .navbar-nav > li > a.btn.btn-rose:hover {
-  box-shadow: 0 14px 26px -12px #024b94, 0 4px 23px 0px #024b94, 0 8px 10px -5px #024b94;
+  box-shadow: 0 14px 26px -12px #337ec7, 0 4px 23px 0px #ffffff, 0 8px 10px -5px #337ec7;
 }
 .btn.btn-rose.disabled, .btn.btn-rose.disabled:hover, .btn.btn-rose.disabled:focus, .btn.btn-rose.disabled.focus, .btn.btn-rose.disabled:active, .btn.btn-rose.disabled.active, .btn.btn-rose:disabled, .btn.btn-rose:disabled:hover, .btn.btn-rose:disabled:focus, .btn.btn-rose:disabled.focus, .btn.btn-rose:disabled:active, .btn.btn-rose:disabled.active, .btn.btn-rose[disabled], .btn.btn-rose[disabled]:hover, .btn.btn-rose[disabled]:focus, .btn.btn-rose[disabled].focus, .btn.btn-rose[disabled]:active, .btn.btn-rose[disabled].active, fieldset[disabled] .btn.btn-rose, fieldset[disabled] .btn.btn-rose:hover, fieldset[disabled] .btn.btn-rose:focus, fieldset[disabled] .btn.btn-rose.focus, fieldset[disabled] .btn.btn-rose:active, fieldset[disabled] .btn.btn-rose.active,
 .navbar .navbar-nav > li > a.btn.btn-rose.disabled,
@@ -10471,8 +10471,8 @@ footer .btn {
   color: #f44336;
 }
 .card [data-background-color="rose"] {
-  background: linear-gradient(60deg, #ec407a, #d81b60);
-  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4);
+  background: linear-gradient(60deg, #004A93, #004A93);
+  box-shadow: 0 4px 20px 0px #00000024, 0 7px 10px -5px #000000;
 }
 .card [data-icon-bg-color="rose"] i {
   color: #e91e63;

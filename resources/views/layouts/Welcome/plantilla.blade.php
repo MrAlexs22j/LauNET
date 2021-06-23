@@ -92,9 +92,15 @@
 <div class="row mt-5">
   <div class="col-md-6 col-lg-8">
 
-    <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> Network</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+    <p class="copyright">
+        Copyright
+        &copy;
+        <a href="https://laumayer.com/">Laumayer</a>
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+    </p>
+
   </div>
   <div class="col-md-6 col-lg-4 text-md-right">
    <p class="mb-0 list-unstyled">
