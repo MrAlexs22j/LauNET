@@ -55,7 +55,7 @@
                                     <td>{{ $items->subproceso }}</td>
                                     <td class="text-right">
                                         <a href="{{route('directorio.create')}}" class="btn btn-simple btn-warning btn-icon"><i class="material-icons">group_add</i></a>
-                                        <a href="/" class="btn btn-simple btn-info btn-icon"><i class="material-icons">dvr</i></a>
+                                        <a href="{{route('directorio.show', $items->id)}}" class="btn btn-simple btn-info btn-icon"><i class="material-icons">dvr</i></a>
                                         <a href="/" class="btn btn-simple btn-danger btn-icon remove" onclick="demo.showSwal('warning-message-and-confirmation')"><i class="material-icons">delete_outline</i></a>
                                     
                                     </td>
