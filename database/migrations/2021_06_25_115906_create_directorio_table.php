@@ -23,7 +23,7 @@ class CreateDirectorioTable extends Migration
             $table->string('email')->unique();
             $table->Biginteger('centro_costos');
             $table->string('subproceso');
-            $table->text('acerca_de');
+            $table->text('estado');
             $table->timestamps();
 
         });

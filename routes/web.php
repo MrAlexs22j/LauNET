@@ -32,5 +32,6 @@ Route::get('Administrador_LauNET/perfil', [AdministradorController::class, 'perf
 //RUTAS DOCUMENTOS LAUMAYER
 
 //1. DIRECTORIO
-Route::get('Directorio/index', [DirectorioController::class, 'index'])->name('directorio.index');
+Route::get('Directorio', [DirectorioController::class, 'index'])->name('directorio.index');
 Route::get('Directorio/create', [DirectorioController::class, 'create'])->name('directorio.create');
+Route::post('Directorio', [DirectorioController::class, 'store'])->name('directorio.store');

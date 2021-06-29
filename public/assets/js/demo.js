@@ -261,9 +261,10 @@ demo = {
 
          $('.timepicker').datetimepicker({
 //          format: 'H:mm',    // use this format if you want the 24hours timepicker
-            format: 'h:mm:ss',    //use this format if you want the 12hours timpiecker with AM/PM toggle
+            format: 'h:mm A',    //use this format if you want the 12hours timpiecker with AM/PM toggle
             icons: {
                 time: "fa fa-clock-o",
+                date: "fa fa-calendar",
                 up: "fa fa-chevron-up",
                 down: "fa fa-chevron-down",
                 previous: 'fa fa-chevron-left',
@@ -281,15 +282,15 @@ demo = {
         // Code for the Validator
         var $validator = $('.wizard-card form').validate({
     		  rules: {
-    		    usuario: {
+    		    firstname: {
     		      required: true,
     		      minlength: 3
     		    },
-    		    contraseña: {
+    		    lastname: {
     		      required: true,
     		      minlength: 3
     		    },
-    		    correo: {
+    		    email: {
     		      required: true,
     		      minlength: 3,
     		    }
@@ -772,7 +773,7 @@ demo = {
 
     },
 
-    showSwal: function(type,texto,alerta){
+    showSwal: function(type){
 
         if(type == 'basic'){
         	swal({
@@ -791,10 +792,11 @@ demo = {
 
     	}else if(type == 'success-message'){
         	swal({
-                text: texto,
+                title: "Good job!",
+                text: "You clicked the button!",
                 buttonsStyling: false,
                 confirmButtonClass: "btn btn-success",
-                type: alerta
+                type: "success"
             });
 
     	}else if(type == 'warning-message-and-confirmation'){
@@ -860,10 +862,10 @@ demo = {
                 });
 
     	}else if(type == 'auto-close'){
-        	swal({
-            	   text: texto,
-            	   timer: 1300,
-                   showConfirmButton: false
+        	swal({ title: "Auto close alert!",
+            	   text: "I will close in 2 seconds.",
+            	   timer: 2000,
+            	   showConfirmButton: false
                 });
     	} else if(type == 'input-field'){
             swal({
@@ -1147,18 +1149,18 @@ demo = {
 		});
     },
 
-	showNotification: function(from, align, color, tiempo, icono, mensaje) {
-        //type = ['','info','success','warning','danger','rose','primary'];
+	showNotification: function(from, align){
+        type = ['','info','success','warning','danger','rose','primary'];
 
-        //color = Math.floor((Math.random() * 6) + 1);
+        color = Math.floor((Math.random() * 6) + 1);
 
     	$.notify({
-        	icon: icono,
-        	message: mensaje
+        	icon: "notifications",
+        	message: "Welcome to <b>Material Dashboard</b> - a beautiful freebie for every web developer."
 
-        }, {
-            type: color,
-            timer: tiempo,
+        },{
+            type: type[color],
+            timer: 3000,
             placement: {
                 from: from,
                 align: align
