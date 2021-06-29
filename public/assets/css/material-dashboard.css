@@ -3847,11 +3847,11 @@ be a descendant of the grid when it is being dragged.
   border-color: #f44336;
 }
 .wizard-card[data-color="rose"] .moving-tab {
-  background-color: #109722;
-  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(18, 136, 33, 0.4);
+  background-color: #024b94;
+  box-shadow: 0 4px 20px 0px #ffffff, 0 7px 10px -5px #024b94;
 }
 .wizard-card[data-color="rose"] .picture:hover {
-  border-color: #109722;
+  border-color: #0080ff;
 }
 .wizard-card[data-color="rose"] .choice:hover .icon, .wizard-card[data-color="rose"] .choice.active .icon {
   border-color: #109722;
@@ -6388,7 +6388,7 @@ h2.title {
 .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle, .open >
 .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:focus, .open >
 .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:hover {
-  background-color: #004A93 ;
+  background-color: #337ab7 ;
   color: #FFFFFF;
 }
 .btn.btn-rose:focus, .btn.btn-rose:active, .btn.btn-rose:hover,

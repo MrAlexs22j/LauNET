@@ -26,10 +26,11 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 //RUTAS ADMINISTRADOR
-Route::get('/DEPARTAMENTOS/Administrador_LauNET/perfil', [AdministradorController::class, 'perfil'])->name('Administrador_LauNET.perfil');
+Route::get('Administrador_LauNET/perfil', [AdministradorController::class, 'perfil'])->name('Administrador_LauNET.perfil');
 
 
 //RUTAS DOCUMENTOS LAUMAYER
 
 //1. DIRECTORIO
-Route::get('/Laumayer/Documentos/directorio', [DirectorioController::class, 'index'])->name('Directorio.index');
+Route::get('Directorio/index', [DirectorioController::class, 'index'])->name('directorio.index');
+Route::get('Directorio/create', [DirectorioController::class, 'create'])->name('directorio.create');

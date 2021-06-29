@@ -112,16 +112,16 @@
         <div class="collapse" id="Laumayer">
             <ul class="nav">
                 <li>
-                    <a href="{{ route('Directorio.index') }}">Directorio Telefonico</a>
+                    <a href="{{ route('directorio.index') }}">Directorio Telefonico</a>
                 </li>
                 <li>
-                    <a href="../pages/timeline.html">Timeline</a>
+                    <a href="../pages/timeline.html">Documentos</a>
                 </li>
                 <li>
-                    <a href="../pages/pricing.html">Pricing</a>
+                    <a href="../pages/pricing.html">Empresa</a>
                 </li>
                 <li>
-                    <a href="../pages/timeline.html">Timeline</a>
+                    <a href="../pages/timeline.html">Contactanos</a>
                 </li>
             </ul>
         </div>
@@ -129,17 +129,17 @@
     <li>
         <a data-toggle="collapse" href="#pagesExamples">
             <i class="material-icons">image</i>
-            <p>Laumayer
+            <p>Proximamente
                 <b class="caret"></b>
             </p>
         </a>
         <div class="collapse" id="pagesExamples">
             <ul class="nav">
                 <li>
-                    <a href="../pages/pricing.html">Pricing</a>
+                    <a href="../pages/pricing.html">Proximamente</a>
                 </li>
                 <li>
-                    <a href="../pages/timeline.html">Timeline</a>
+                    <a href="../pages/timeline.html">Proximamente</a>
                 </li>
             </ul>
         </div>
@@ -147,19 +147,19 @@
     <li>
         <a href="../widgets.html">
             <i class="material-icons">widgets</i>
-            <p>Widgets</p>
+            <p>Proximamente</p>
         </a>
     </li>
     <li>
         <a href="../charts.html">
             <i class="material-icons">timeline</i>
-            <p>Charts</p>
+            <p>Proximamente</p>
         </a>
     </li>
     <li>
         <a href="../calendar.html">
             <i class="material-icons">date_range</i>
-            <p>Calendar</p>
+            <p>Proximamente</p>
         </a>
     </li>
 </ul>
@@ -248,13 +248,13 @@
             @yield('home')
             @yield('perfil')
 
-            <!-- DOCUMENTOS -->
-            @yield('directorio')
-
             <!-- ACCIONES -->
+            @yield('index')
             @yield('create')
+            @yield('show')
+            @yield('edit')
             @yield('update')
-            @yield('delete')
+        
 
             <!-- --------------------------[FIN CONTENIDO]-------------------------- -->
 
@@ -430,6 +430,11 @@
 <script src="../../assets/js/material-dashboard.js"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../../assets/js/demo.js"></script>
+<script type="text/javascript">
+    $().ready(function() {
+        demo.initMaterialWizard();
+    });
+</script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('#datatables').DataTable({

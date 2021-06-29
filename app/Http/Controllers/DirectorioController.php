@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Directorio;
 use Illuminate\Http\Request;
 
 class DirectorioController extends Controller
@@ -13,7 +14,8 @@ class DirectorioController extends Controller
      */
     public function index()
     {
-        return view('/Laumayer/Documentos/Directorio/index');
+        $directorio = Directorio::all();
+        return view('/Laumayer/Documentos/Directorio/index', compact('directorio'));
     }
 
     /**
@@ -23,7 +25,7 @@ class DirectorioController extends Controller
      */
     public function create()
     {
-        //
+        return view('/Laumayer/Documentos/Directorio/create');
     }
 
     /**
