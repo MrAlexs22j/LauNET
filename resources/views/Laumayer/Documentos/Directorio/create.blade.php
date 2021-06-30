@@ -83,34 +83,60 @@
                                 </div>
                             </div>
                             <div class="tab-pane" id="account">
-                                <h4 class="info-text"> Información Empresarial </h4>
+                                <h4 class="info-text"> Empresa </h4>
                                 <div class="row">
                                     <div class="col-sm-7 col-sm-offset-1">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Empresa*</label>
-                                            <input type="text" class="form-control" required value="LAUMAYER COLOMBIANA COMERCIALIZADORA S.A." disabled>
+                                            <label class="control-label">Empresa</label>
+                                            <input type="text" name="empresa" class="form-control" required value="LAUMAYER COLOMBIANA COMERCIALIZADORA S.A.">
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Ubicación*</label>
-                                            <input type="text" class="form-control" required value=" Cra. 50 C No. 10 SUR 61" disabled>
+                                            <label class="control-label">NIT
+                                            <small>(Obligatorio)</small>
+                                            </label>
+                                            <input type="text" name="nit" class="form-control" required value="890.921.335 - 3">
                                         </div>
                                     </div>
                                     <div class="col-sm-5 col-sm-offset-1">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Centro de Costos
+                                            <label class="control-label">Sede
                                                 <small>(Obligatorio)</small>
                                             </label>
-                                            <input type="text" name="centro_costos" class="form-control" required>
+                                            <input type="text" name="sede" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-sm-5">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Subproceso
+                                            <label class="control-label">Direccion
                                                 <small>(Obligatorio)</small>   
                                             </label>
-                                            <input type="text" name="subproceso" class="form-control" required>
+                                            <input type="text" name="direccion" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-sm-offset-1">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label">PBX
+                                                <small>(Obligatorio)</small>
+                                            </label>
+                                            <input type="text" name="pbx" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label">FAX
+                                                <small>(Obligatorio)</small>   
+                                            </label>
+                                            <input type="text" name="fax" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-sm-offset-1">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label">Zona
+                                                <small>(Obligatorio)</small>
+                                            </label>
+                                            <input type="number" name="zona" class="form-control" required>
                                         </div>
                                     </div>
                                 </div>
@@ -118,17 +144,25 @@
                             <div class="tab-pane" id="address">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <h4 class="info-text"> Contactos del Empleado </h4>
+                                        <h4 class="info-text"> Contacto </h4>
                                     </div>
                                     <div class="col-sm-7 col-sm-offset-1">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Extension
+                                            <label class="control-label">Centro de Costos
                                                 <small>(Obligatorio)</small>
                                             </label>
-                                            <input type="number" name="extension" class="form-control" required>
+                                            <input type="number" name="centro_costos" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label">Subproceso
+                                            <small>(Obligatorio)</small>
+                                            </label>
+                                            <input type="text" name="subproceso" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-sm-offset-1">
                                         <div class="form-group label-floating">
                                             <label class="control-label">Celular
                                                 <small>(Obligatorio)</small>
@@ -136,7 +170,15 @@
                                             <input type="number" name="celular" class="form-control" required>
                                         </div>
                                     </div>
-                                    <div class="col-sm-5 col-sm-offset-1">
+                                    <div class="col-sm-5">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label">Extension
+                                                <small>(Obligatorio)</small>   
+                                            </label>
+                                            <input type="number" name="extension" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-sm-offset-1">
                                         <div class="form-group label-floating">
                                             <label class="control-label">Estado
                                                 <small>(Obligatorio)</small>
@@ -149,11 +191,11 @@
                         </div>
                         <div class="wizard-footer">
                             <div class="pull-right">
-                                <input type='button' class='btn btn-next btn-fill btn-rose btn-wd' name='next' value='Next' />
-                                <input type='submit' class='btn btn-finish btn-fill btn-rose btn-wd'/>
+                                <input type='button' class='btn btn-next btn-fill btn-rose btn-wd' name='next' value='Siguiente' />
+                                <input type='submit' class='btn btn-finish btn-fill btn-rose btn-wd' value="Guardar"/>
                             </div>
                             <div class="pull-left">
-                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
+                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Atras' />
                             </div>
                             <div class="clearfix"></div>
                         </div>

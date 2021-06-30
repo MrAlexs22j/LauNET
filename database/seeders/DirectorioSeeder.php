@@ -23,6 +23,14 @@ class DirectorioSeeder extends Seeder
         $directorio->centro_costos = '1017789';
         $directorio->subproceso = 'TIC';
         $directorio->estado = 'Activo';
+        $directorio->empresa = 'LAUMAYER COLOMBIANA COMERCIALIZADORA S.A.';
+        $directorio->nit = '890.921.335 - 3';
+        $directorio->zona = 1;
+        $directorio->direccion = 'CARRERA 50 C No. 10 SUR 61';
+        $directorio->pbx = '(4) 3618585 ';
+        $directorio->fax = '(4) 3613667';
+        $directorio->sede = 'Medellin';
+
 
         $directorio->save();
     }

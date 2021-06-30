@@ -42,7 +42,7 @@
                   <div class="text w-100">
                       <h2>NUETRO AMBIENTE DE TRABAJO</h2>
                     <h1 class="mb-4">Contamos con los mejores espacios de trabajo</h1>
-                    <p><a href="#" class="btn btn-primary">ver más</a> <a href="#" class="btn btn-white">Contáctanos</a></p>
+                    <p><a href="#" class="btn btn-primary">ver más</a> <a href="#" class="btn btn-white">Cotactenos</a></p>
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@
         </li>
         <li>
             <a href="#tasks-2" role="tab" data-toggle="tab">
-                <i class="material-icons">help_outline</i> Contactenos
+                <i class="material-icons">phone_paused</i> Directorio
             </a>
         </li>
     </ul>

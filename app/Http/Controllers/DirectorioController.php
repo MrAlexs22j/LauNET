@@ -46,10 +46,17 @@ class DirectorioController extends Controller
         $directorio->centro_costos = $request->centro_costos;
         $directorio->subproceso = $request->subproceso;
         $directorio->estado = $request->estado;
+        $directorio->empresa = $request->empresa;
+        $directorio->nit = $request->nit;
+        $directorio->zona = $request->zona;
+        $directorio->direccion = $request->direccion;
+        $directorio->pbx = $request->pbx;
+        $directorio->fax = $request->fax;
+        $directorio->sede = $request->sede;
 
         $directorio->save();
 
-        return redirect()->route('directorio.index');
+        return redirect()->route('directorio.show', compact('directorio'));
     }
 
     /**
@@ -69,9 +76,9 @@ class DirectorioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Directorio $directorio)
     {
-        //
+        return view('/Laumayer/Documentos/Directorio/edit', compact('directorio'));
     }
 
     /**
@@ -81,9 +88,27 @@ class DirectorioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Directorio $directorio)
     {
-        //
+        $directorio->nombre = $request->nombre;
+        $directorio->cargo = $request->cargo;
+        $directorio->extension = $request->extension;
+        $directorio->celular = $request->celular;
+        $directorio->email = $request->email;
+        $directorio->centro_costos = $request->centro_costos;
+        $directorio->subproceso = $request->subproceso;
+        $directorio->estado = $request->estado;
+        $directorio->empresa = $request->empresa;
+        $directorio->nit = $request->nit;
+        $directorio->zona = $request->zona;
+        $directorio->direccion = $request->direccion;
+        $directorio->pbx = $request->pbx;
+        $directorio->fax = $request->fax;
+        $directorio->sede = $request->sede;
+
+        $directorio->update();
+
+        return redirect()->route('directorio.show', compact('directorio'));
     }
 
     /**

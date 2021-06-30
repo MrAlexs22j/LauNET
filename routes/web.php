@@ -36,3 +36,5 @@ Route::get('Directorio', [DirectorioController::class, 'index'])->name('director
 Route::get('Directorio/create', [DirectorioController::class, 'create'])->name('directorio.create');
 Route::post('Directorio', [DirectorioController::class, 'store'])->name('directorio.store');
 Route::get('Directorio/{directorio}', [DirectorioController::class, 'show'])->name('directorio.show');
+Route::get('Directorio/{directorio}/edit', [DirectorioController::class, 'edit'])->name('directorio.edit');
+Route::put('Directorio/{directorio}', [DirectorioController::class, 'update'])->name('directorio.update');

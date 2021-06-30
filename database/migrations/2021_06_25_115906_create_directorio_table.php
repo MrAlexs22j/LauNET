@@ -20,10 +20,17 @@ class CreateDirectorioTable extends Migration
             $table->string('cargo');
             $table->Biginteger('extension');
             $table->Biginteger('celular');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->Biginteger('centro_costos');
             $table->string('subproceso');
-            $table->text('estado');
+            $table->string('estado');
+            $table->string('empresa');
+            $table->string('nit');
+            $table->integer('zona');
+            $table->string('direccion');
+            $table->string('pbx');
+            $table->string('fax');
+            $table->string('sede');
             $table->timestamps();
 
         });

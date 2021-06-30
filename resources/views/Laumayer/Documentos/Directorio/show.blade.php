@@ -67,50 +67,80 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <h4 class="info-text"> <b>Empresarial</b> </h4>
+                                        <h4 class="info-text"> <b>Empresa</b> </h4>
                                     </div>
                                     <div class="col-sm-7 col-sm-offset-1">
                                         <div class="form-group label-floating">
                                             <label class="control-label"><strong>EMPRESA</strong></label>
-                                            <input type="text" class="form-control" required value="LAUMAYER COLOMBIANA COMERCIALIZADORA S.A." disabled>
+                                            <h6 class="form-control">{{$directorio->empresa}}</h6>
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
                                         <div class="form-group label-floating">
-                                            <label class="control-label"><strong>UBICACIÓN</strong></label>
-                                            <input type="text" class="form-control" required value=" Cra. 50 C No. 10 SUR 61" disabled>
+                                            <label class="control-label"><strong>NIT</strong></label>
+                                            <h6 class="form-control">{{$directorio->nit}}</h6>
                                         </div>
                                     </div>
                                     <div class="col-sm-5 col-sm-offset-1">
                                         <div class="form-group label-floating">
-                                            <label class="control-label"><strong>CENTRO DE COSTOS</strong></label>
-                                            <h6 class="form-control">{{$directorio->centro_costos}}</h6>
+                                            <label class="control-label"><strong>SEDE</strong></label>
+                                            <h6 class="form-control">{{$directorio->sede}}</h6>
                                         </div>
                                     </div>
                                     <div class="col-sm-5">
                                         <div class="form-group label-floating">
-                                            <label class="control-label"><strong>SUBPROCESO</strong></label>
-                                            <h6 class="form-control">{{$directorio->subproceso}}</h6>
+                                            <label class="control-label"><strong>DIRECCION</strong></label>
+                                            <h6 class="form-control">{{$directorio->direccion}}</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-sm-offset-1">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label"><strong>PBX</strong></label>
+                                            <h6 class="form-control">{{$directorio->pbx}}</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label"><strong>FAX</strong></label>
+                                            <h6 class="form-control">{{$directorio->fax}}</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-sm-offset-1">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label"><strong>ZONA</strong></label>
+                                            <h6 class="form-control">{{$directorio->zona}}</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <h4 class="info-text"><b>Contactos</b></h4>
+                                        <h4 class="info-text"><b>Contacto</b></h4>
                                     </div>
                                     <div class="col-sm-7 col-sm-offset-1">
                                         <div class="form-group label-floating">
-                                            <label class="control-label"><strong>EXTENSION</strong></label>
-                                            <h6 class="form-control">{{$directorio->extension}}</h6>
+                                            <label class="control-label"><strong>CENTRO DE COSTOS</strong></label>
+                                            <h6 class="form-control">{{$directorio->centro_costos}}</h6>
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label"><strong>SUBPROCESO</strong></label>
+                                            <h6 class="form-control">{{$directorio->subproceso}}</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-sm-offset-1">
                                         <div class="form-group label-floating">
                                             <label class="control-label"><strong>CELULAR</strong></label>
                                             <h6 class="form-control">{{$directorio->celular}}</h6>
                                         </div>
                                     </div>
-                                    <div class="col-sm-5 col-sm-offset-1">
+                                    <div class="col-sm-5">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label"><strong>EXTENSION</strong></label>
+                                            <h6 class="form-control">{{$directorio->extension}}</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-sm-offset-1">
                                         <div class="form-group label-floating">
                                             <label class="control-label"><strong>ESTADO</strong></label>
                                             <h6 class="form-control">{{$directorio->estado}}</h6>
@@ -121,7 +151,7 @@
                         </div>
                         <div class="wizard-footer">
                             <div class="pull-right">
-                                <a href="{{route('directorio.index')}}" class="button">
+                                <a href="{{route('directorio.edit', $directorio)}}" class="button">
                                     <input type='submit' class='btn btn-finish btn-fill btn-rose btn-wd' value="Editar"/>
                                 </a>
                                 <a href="{{route('directorio.index')}}" class="button">
