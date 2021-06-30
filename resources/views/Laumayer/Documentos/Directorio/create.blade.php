@@ -15,7 +15,7 @@
                             <h3 class="wizard-title">
                                 Nuevo directorio
                             </h3>
-                            <h5>Ingresa la información del empleado.</h5>
+                            <h5>Ingresa la información del empleado</h5>
                         </div>
                         <div class="wizard-navigation">
                             <ul>
@@ -37,7 +37,7 @@
                                     <div class="col-sm-4 col-sm-offset-1">
                                         <div class="picture-container">
                                             <div class="picture">
-                                                <img src="../../assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title="" />
+                                                <img src="../../assets/img/favicon.png" class="picture-src" id="wizardPicturePreview" title="" />
                                                 <input type="file" id="wizard-picture">
                                             </div>
                                             <h6>Foto</h6>

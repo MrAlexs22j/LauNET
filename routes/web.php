@@ -35,4 +35,4 @@ Route::get('Administrador_LauNET/perfil', [AdministradorController::class, 'perf
 Route::get('Directorio', [DirectorioController::class, 'index'])->name('directorio.index');
 Route::get('Directorio/create', [DirectorioController::class, 'create'])->name('directorio.create');
 Route::post('Directorio', [DirectorioController::class, 'store'])->name('directorio.store');
-Route::get('Directorio/show', [DirectorioController::class, 'show'])->name('directorio.show');
+Route::get('Directorio/{directorio}', [DirectorioController::class, 'show'])->name('directorio.show');
