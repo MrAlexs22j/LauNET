@@ -74,7 +74,7 @@
     border-radius: 8px 0 0 8px;
     text-align: center;
 }
-.fixed-plugin .fa-cog{
+.fixed-plugin .fa-calendar{
     color: #FFFFFF;
     padding: 10px;
     border-radius: 0 0 6px 6px;
@@ -150,7 +150,7 @@
 }
 
 .fixed-plugin .badge-rose{
-    background-color: #e91e63;
+    background-color: #0089ffc7;
 }
 
 .fixed-plugin .badge-black{
@@ -411,3 +411,4 @@
         top: 80px;
     }
 }
+

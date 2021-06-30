@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Administrador\Administrador;
 use Illuminate\Database\Seeder;
 
 class AdministradorSeeder extends Seeder
@@ -13,6 +14,12 @@ class AdministradorSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $administrador = new Administrador();
+
+        $administrador->nombre = 'Administrador';
+        $administrador->email = 'administrador@gmail.com';
+        $administrador->password = bcrypt('password');
+        
+
     }
 }

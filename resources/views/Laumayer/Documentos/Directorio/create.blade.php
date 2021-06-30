@@ -50,9 +50,9 @@
                                             </span>
                                             <div class="form-group label-floating">
                                                 <label class="control-label">Nombre
-                                                    <small>(required)</small>
+                                                    <small>(Obligatorio)</small>
                                                 </label>
-                                                <input name="nombre" type="text" class="form-control">
+                                                <input name="nombre" type="text" class="form-control" required>
                                             </div>
                                         </div>
                                         <div class="input-group">
@@ -61,9 +61,9 @@
                                             </span>
                                             <div class="form-group label-floating">
                                                 <label class="control-label">Cargo
-                                                    <small>(required)</small>
+                                                    <small>(Oblgatorio)</small>
                                                 </label>
-                                                <input name="cargo" type="text" class="form-control">
+                                                <input name="cargo" type="text" class="form-control" required>
                                             </div>
                                         </div>
                                     </div>
@@ -74,9 +74,9 @@
                                             </span>
                                             <div class="form-group label-floating">
                                                 <label class="control-label">Email
-                                                    <small>(required)</small>
+                                                    <small>(Obligatorio)</small>
                                                 </label>
-                                                <input name="email" type="email" class="form-control">
+                                                <input name="email" type="email" class="form-control" required>
                                             </div>
                                         </div>
                                     </div>
@@ -99,14 +99,18 @@
                                     </div>
                                     <div class="col-sm-5 col-sm-offset-1">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Centro de Costos</label>
-                                            <input type="text" name="centro_costos" class="form-control">
+                                            <label class="control-label">Centro de Costos
+                                                <small>(Obligatorio)</small>
+                                            </label>
+                                            <input type="text" name="centro_costos" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-sm-5">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Subproceso</label>
-                                            <input type="text" name="subproceso" class="form-control">
+                                            <label class="control-label">Subproceso
+                                                <small>(Obligatorio)</small>   
+                                            </label>
+                                            <input type="text" name="subproceso" class="form-control" required>
                                         </div>
                                     </div>
                                 </div>
@@ -118,20 +122,26 @@
                                     </div>
                                     <div class="col-sm-7 col-sm-offset-1">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Extension</label>
-                                            <input type="number" name="extension" class="form-control">
+                                            <label class="control-label">Extension
+                                                <small>(Obligatorio)</small>
+                                            </label>
+                                            <input type="number" name="extension" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Celular</label>
-                                            <input type="number" name="celular" class="form-control">
+                                            <label class="control-label">Celular
+                                                <small>(Obligatorio)</small>
+                                            </label>
+                                            <input type="number" name="celular" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-sm-5 col-sm-offset-1">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Estado</label>
-                                            <input type="text" name="estado" class="form-control">
+                                            <label class="control-label">Estado
+                                                <small>(Obligatorio)</small>
+                                            </label>
+                                            <input type="text" name="estado" class="form-control" required>
                                         </div>
                                     </div>
                                 </div>

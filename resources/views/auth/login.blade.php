@@ -11,7 +11,7 @@
                     <h4 class="card-title">Iniciar Sesión</h4>
                 </div>
                 <center>
-                <img src="assets/img/Logo.png">
+                <img src="assets/img/launet.png">
                 </center>
                 <div class="card-content">
                     <div class="input-group" {{ $errors->has('email') ? 'has-error' : ''}}>
