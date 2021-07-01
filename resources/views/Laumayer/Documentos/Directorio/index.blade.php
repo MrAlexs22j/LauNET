@@ -56,7 +56,7 @@
                                     <td class="text-right">
                                         <a href="{{route('directorio.create')}}"><i class="material-icons">group_add</i></a>
                                         <a href="{{route('directorio.show', $items->id)}}"><i class="material-icons">dvr</i></a>
-                                        <a href="/" class="" onclick="demo.showSwal('warning-message-and-confirmation')"><i class="material-icons">delete_outline</i></a>
+                                        <a href="" class="" onclick="demo.showSwal('warning-message-and-confirmation')"><i class="material-icons">delete_outline</i></a>
                                     
                                     </td>
                                 </tr>

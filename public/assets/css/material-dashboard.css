@@ -6388,7 +6388,7 @@ h2.title {
 .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle, .open >
 .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:focus, .open >
 .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:hover {
-  background-color: #337ab7 ;
+  background-color: #004A93 ;
   color: #FFFFFF;
 }
 .btn.btn-rose:focus, .btn.btn-rose:active, .btn.btn-rose:hover,
@@ -9307,7 +9307,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   font-weight: 500;
   min-width: 100px;
   text-align: center;
-  color: #555555;
+  color: #004A93;
   transition: all .3s;
 }
 .nav-pills > li > a:hover {
@@ -10537,9 +10537,17 @@ footer .btn {
   background: transparent;
   box-shadow: none;
 }
+
+.card-plain2{
+  background: transparent;
+  box-shadow: none;
+  margin-top: 5%;
+}
 .card-plain .card-header {
   margin-left: 0;
   margin-right: 0;
+  background-color: #06549c;
+
 }
 .card-plain .card-header-icon {
   margin-right: 15px;

@@ -191,6 +191,9 @@
                         </div>
                         <div class="wizard-footer">
                             <div class="pull-right">
+                                <a href="{{route('directorio.index')}}" class="button">
+                                    <input  type='get' class='btn btn-fill btn-rose btn-wd' style="width: 37%" value="Cencelar"/>
+                                </a>
                                 <input type='button' class='btn btn-next btn-fill btn-rose btn-wd' name='next' value='Siguiente' />
                                 <input type='submit' class='btn btn-finish btn-fill btn-rose btn-wd' value="Guardar"/>
                             </div>

@@ -17,6 +17,7 @@ class DirectorioController extends Controller
         $directorio = Directorio::all();
         return view('/Laumayer/Documentos/Directorio/index', compact('directorio'));
     }
+    
 
     /**
      * Show the form for creating a new resource.

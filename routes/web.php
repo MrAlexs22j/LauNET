@@ -3,7 +3,10 @@
 use App\Http\Controllers\AdministradorController;
 use App\Http\Controllers\DirectorioController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
+use League\CommonMark\Block\Element\IndentedCode;
+use SebastianBergmann\CodeCoverage\CrapIndex;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //RUTAS DE LANDING PAGE
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [WelcomeController::class, 'index']);
 
 Auth::routes();
 
