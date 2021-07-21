@@ -128,18 +128,27 @@
     </li>
     <li>
         <a data-toggle="collapse" href="#pagesExamples">
-            <i class="material-icons">image</i>
-            <p>Proximamente
+            <i class="material-icons">pageview</i>
+            <p>Consultas
                 <b class="caret"></b>
             </p>
         </a>
         <div class="collapse" id="pagesExamples">
             <ul class="nav">
                 <li>
-                    <a href="../pages/pricing.html">Proximamente</a>
+                    <a href="../pages/pricing.html">Comprobante de Nomina</a>
                 </li>
                 <li>
-                    <a href="../pages/timeline.html">Proximamente</a>
+                    <a href="../pages/timeline.html">Prima de Servicios</a>
+                </li>
+                <li>
+                    <a href="../pages/timeline.html">Carta laboral</a>
+                </li>
+                <li>
+                    <a href="../pages/timeline.html">Comisiones</a>
+                </li>
+                <li>
+                    <a href="../pages/timeline.html">Aguinaldo</a>
                 </li>
             </ul>
         </div>

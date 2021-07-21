@@ -298,43 +298,43 @@
                   </div>
                   <div class="material-datatables">
                     <table id="datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
-                      <thead>
-                        <tr>
-                          <th>ID</th>
-                          <th>NOMBRE</th>
-                          <th>CARGO</th>
-                          <th>EXTENSIÓN</th>
-                          <th>CELULAR</th>
-                          <th>CORREO ELECTRONICO</th>
-                          <th>CENTRO DE COSTOS</th>
-                          <th>SUBPROCESO</th>
-                        </tr>
-                      </thead>
-                      <tfoot>
-                        <th>ID</th>
-                        <th>NOMBRE</th>
-                        <th>CARGO</th>
-                        <th>EXTENSIÓN</th>
-                        <th>CELULAR</th>
-                        <th>CORREO ELECTRONICO</th>
-                        <th>CENTRO DE COSTOS</th>
-                        <th>SUBPROCESO</th>
-                      </tr>
-                    </tfoot>
-                    <tbody>
-                      @foreach ($directorio as $items)
-                      <tr>
-                        <td>{{ $items->id }}</td>
-                        <td>{{ $items->nombre }}</td>
-                        <td>{{ $items->cargo }}</td>
-                        <td>{{ $items->extension }}</td>
-                        <td>{{ $items->celular }}</td>
-                        <td>{{ $items->email }}</td>
-                        <td>{{ $items->centro_costos }}</td>
-                        <td>{{ $items->subproceso }}</td>
-                      </tr>
-                      @endforeach
-                    </tbody>
+                        <thead>
+                            <tr>
+                              <th>ID</th>
+                              <th>NOMBRE</th>
+                              <th>CARGO</th>
+                              <th>EXT</th>
+                              <th>CELULAR</th>
+                              <th>CORREO ELECTRONICO</th>
+                              <th>C.COSTOS</th>
+                              <th>SUBPROCESO</th>
+                            </tr>
+                          </thead>
+                          <tfoot>
+                            <th>ID</th>
+                            <th>NOMBRE</th>
+                            <th>CARGO</th>
+                            <th>EXT</th>
+                            <th>CELULAR</th>
+                            <th>CORREO ELECTRONICO</th>
+                            <th>C.COSTOS</th>
+                            <th>SUBPROCESO</th>
+                          </tr>
+                        </tfoot>
+                        <tbody>
+                          @foreach ($directorio as $items)
+                          <tr>
+                            <td >{{ $items->id }}</td>
+                            <td style="width: 18%;">{{ $items->nombre }}</td>
+                            <td style="width: 22%;">{{ $items->cargo }}</td>
+                            <td style="width: 5%;">{{ $items->extension }}</td>
+                            <td >{{ $items->celular }}</td>
+                            <td >{{ $items->email }}</td>
+                            <td >{{ $items->centro_costos }}</td>
+                            <td >{{ $items->subproceso }}</td>
+                          </tr>
+                          @endforeach
+                        </tbody>
                   </table>
                 </div>
               </div>

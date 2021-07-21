@@ -13,6 +13,6 @@ class AdministradorController extends Controller
 
     public function perfil(){
 
-        return view('/DEPARTAMENTOS/Administrador_LauNET/perfil');
+        return view('/Administrador_LauNET/Personal/Administrador/perfil');
     }
 }
